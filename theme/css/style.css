@@ -156,7 +156,7 @@ a:focus, a:hover {
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 999999999;
+  z-index: 999999;
 }
 
 .btn.active:focus, .btn:active:focus, .btn:focus {
@@ -562,7 +562,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  background-image: url("../images/slider/slider-bg-1.jpg");
+  background-image: url();
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -965,11 +965,7 @@ a:focus, a:hover {
 }
 
 .google-map {
-  position: relative;
-}
-.google-map .map_canvas {
-  height: 400px;
-  color: white;
+  text-align: center;
 }
 
 /*=================================================================
@@ -1416,7 +1412,7 @@ a:focus, a:hover {
 .testimonial .item .client-thumb img {
   display: inline-block;
   border-radius: 100%;
-  width: 120px;
+  width: 220px;
   height: auto;
   margin-bottom: 20px;
 }
