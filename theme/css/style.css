@@ -788,8 +788,86 @@ a:focus, a:hover {
 .nextArrow::after {
   left: 20px;
 }
-
 /* /slick arrows */
+
+/*=================================================================
+  Countdown Timer
+==================================================================*/
+.countdown{
+  display: flex;
+  justify-content: center;
+}
+.box{
+
+}
+.box:after{
+  content: "";
+  position: absolute;
+  background-color: rgba(255,255,255,0.12);
+  left: 0;
+}
+span.days, span.hours, span.minutes, span.seconds{
+  background-color: #202020;
+  color: white;
+  width: 105px;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+  border-radius: 12px 12px 0px 0px ;
+  margin: 0px 15px 0 15px;
+  box-shadow: 15px 15px 30px rgba(0,0,0,0.5);
+}
+span.text{
+  font-size: 1.2em;
+  background-color: #2887e3;
+  color: white;
+  width: 105px;
+  display: block;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 400;
+  border-radius: 0px 0px 12px 12px ;
+  margin: 0px 15px 0 15px;
+}
+@media screen and (max-width: 768px){
+  .countdown{
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin-bottom: 25px;
+  }
+  .box{
+      width: 85px;
+      font-size: 12px;
+      margin: 0px 10px 0 10px;
+  }
+  span.days, span.hours, span.minutes, span.seconds{
+    width: 85px;
+  }
+  span.text{
+    width: 85px;
+  }
+}
+@media screen and (max-width: 480px){
+  .countdown{
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin-bottom: 25px;
+  }
+  .box{
+      width: 85px;
+      font-size: 12px;
+      margin: 0px 0px 0px 0px;
+  }
+  span.days, span.hours, span.minutes, span.seconds{
+    width: 65px;
+  }
+  span.text{
+    width: 65px;
+  }
+}
 /*=================================================================
   About us section
 ==================================================================*/
@@ -893,6 +971,10 @@ a:focus, a:hover {
 }
 
 /*=================================================================
+  Countdown Timer
+  ==================================================================*/
+
+/*=================================================================
   Contact
   ==================================================================*/
 .contact-us {
@@ -972,7 +1054,15 @@ a:focus, a:hover {
 }
 
 .google-map {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confrenceMap {
+  height: 350px;
+  width: 95%;
+  margin-bottom: 50px;
 }
 
 /*=================================================================
@@ -1083,7 +1173,7 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Portfolio section
+  Schedule section
 ==================================================================*/
 .portfolio-filter {
   margin-bottom: 40px;
@@ -1106,59 +1196,12 @@ a:focus, a:hover {
   color: #fff;
   border-radius: 50px;
 }
-
-.portfolio-block {
-  position: relative;
-  margin-bottom: 30px;
+.schedule-tab-content {
+  margin: auto;
+  max-width: 800px;
 }
-.portfolio-block:before {
-  transition: all 0.3s ease-in-out;
-  background: rgba(0, 0, 0, 0.55);
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  content: "";
-}
-.portfolio-block:hover:before {
-  opacity: 1;
-}
-.portfolio-block:hover .caption h4 {
-  top: 45%;
-}
-.portfolio-block:hover .caption {
-  opacity: 1;
-  top: 55%;
-}
-.portfolio-block .caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-}
-.portfolio-block .caption h4 {
-  font-size: 16px;
-}
-.portfolio-block .caption h4 a {
-  color: #fff;
-}
-.portfolio-block .caption .search-icon {
-  background: #28ABE3;
-  color: #fff;
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  font-size: 17px;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: 47px;
+.name {
+  text-align: right;
 }
 
 /*=================================================================
@@ -1427,7 +1470,7 @@ a:focus, a:hover {
 /*=================================================================
   Latest Posts
 ==================================================================*/
-.blog {
+.sponsers {
   padding-bottom: 60px;
   padding-top: 80px;
   background: #F6F6F6;
@@ -1897,6 +1940,10 @@ a:focus, a:hover {
 }
 .page-404 h1 {
   font-size: 200px;
+}
+.map {
+    padding-bottom: 60px;
+    padding-top: 80px;
 }
 
 /*============================================================
