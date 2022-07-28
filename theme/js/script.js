@@ -209,6 +209,19 @@ let counter = setInterval(() => {
 }, 1000);
 
 //Navbar animated icon
+const buttons = document.querySelectorAll('.iconBtn');
+
+buttons.forEach( iconBtn =>{
+    iconBtn.addEventListener('click',()=>{
+        const faq = iconBtn.nextElementSibling;
+        const icon = iconBtn.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
+
+//Fade Animation
 window.addEventListener('scroll', reveal);
 
 function reveal(){

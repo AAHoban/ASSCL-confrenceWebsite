@@ -10,6 +10,7 @@ p {
   color: #474747;
   font-size: 16px;
   line-height: 1.65;
+  text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1077,6 +1078,9 @@ span.text{
   margin: auto;
   width: 75%;
 }
+.question .trackInfo p{
+  text-align: center;
+}
 .trackTopic{
   font-size: 16px;
 }
@@ -1254,6 +1258,7 @@ span.text{
   padding: 40px 55px 65px;
   background: #fff;
   margin-bottom: 30px;
+  height: 450px;
 }
 .pricing-table .pricing-item a.btn-main {
   text-transform: uppercase;
@@ -1349,6 +1354,39 @@ span.text{
 .services .service-block p {
   font-size: 14px;
   color: #666;
+}
+.deadline{
+  width: 65%;
+}
+.deadlineTitle{
+  background-color: #0b5688;
+  color: #f1d276;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  float: left;
+  margin: 15px 0px;
+  padding: 25px;
+  border-radius: 12px 0px 0px 12px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+  0 18px 36px -18px rgba(0, 0, 0, 0.3),
+  0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+.deadlineDate{
+  background-color: #f1d276;
+  color: #0b5688;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  float: right;
+  margin: 15px 0px;
+  padding: 25px;
+  border-radius: 0px 12px 12px 0px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+  0 18px 36px -18px rgba(0, 0, 0, 0.3),
+  0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 /*=================================================================
   Services section 2
@@ -1505,9 +1543,6 @@ span.text{
 .team .member-photo {
   overflow: hidden;
   position: relative;
-}
-.team .member-photo:hover img {
-  transform: scale(1.1);
 }
 .team .member-photo img {
   transition: all 0.6s ease 0s;
@@ -2010,6 +2045,9 @@ span.text{
   border-top: 1px solid #404040;
   padding: 100px 0 80px;
 }
+.top-footer img {
+  margin-bottom: 25px;
+}
 .top-footer h3 {
   font-size: 16px;
   line-height: 1.5;
@@ -2039,7 +2077,62 @@ span.text{
   display: block;
 }
 .top-footer li a:hover {
-  color: #28ABE3;
+  color: #0b5688;
+}
+.top-footer .social-icon2 {
+  margin-top: 20px;
+}
+.top-footer .social-icon2 ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.top-footer .social-icon2 ul li a i {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0;
+}
+.top-footer .social-icon2 ul li a .fa-twitter{
+  color: #1da1f2;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  text-align: center;
+}
+.top-footer .social-icon2 ul li a .fa-linkedin{
+  color: #0177b5;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  text-align: center;
+}
+.top-footer .social-icon2 ul li a .fa-instagram{
+  color: #833AB4;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  text-align: center;
+}
+.top-footer .social-icon2 ul li a .fa-twitter:hover{
+  color: #fff;
+  background-color: #1da1f2;
+  transition: all 0.3 ease;
+}
+.top-footer .social-icon2 ul li a .fa-linkedin:hover{
+  color: #fff;
+  background-color: #0177b5;
+  transition: all 0.3 ease;
+}
+.top-footer .social-icon2 ul li a .fa-instagram:hover{
+  color: #fff;
+  background-color: #833AB4;
 }
 
 .footer-bottom {
@@ -2070,6 +2163,8 @@ span.text{
 .footer-bottom a {
   color: #28ABE3;
 }
+
+
 
 .page-404 {
   display: flex;
