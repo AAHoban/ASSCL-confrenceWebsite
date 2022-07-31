@@ -179,9 +179,7 @@
 })(jQuery);
 
 // The End Of The Year Date To Countdown To
-// 1000 milliseconds = 1 Second
-
-let countDownDate = new Date("Aug 31, 2022 23:59:59").getTime();
+let countDownDate = new Date("March 1, 2024 23:59:59").getTime();
 // console.log(countDownDate);
 
 let counter = setInterval(() => {
@@ -238,4 +236,36 @@ function reveal(){
       reveals[i].classList.remove('active');
     }
   }
+}
+
+//Sponser Form
+const form = document.querySelector("form"),
+statusTxt = form.querySelector(".button-area span");
+
+form.onsubmit = (e)=>{
+  e.preventDefault();
+  statusTxt.style.color = "#0D6EFD";
+  statusTxt.style.display = "block";
+  statusTxt.innerText = "Sending your message...";
+  form.classList.add("disabled");
+
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "message.php", true);
+  xhr.onload = ()=>{
+    if(xhr.readyState == 4 && xhr.status == 200){
+      let response = xhr.response;
+      if(response.indexOf("Email and message field is required!") != -1 || response.indexOf("Enter a valid email address!") != -1 || response.indexOf("Sorry, failed to send your message!") != -1){
+        statusTxt.style.color = "red";
+      }else{
+        form.reset();
+        setTimeout(()=>{
+          statusTxt.style.display = "none";
+        }, 3000);
+      }
+      statusTxt.innerText = response;
+      form.classList.remove("disabled");
+    }
+  }
+  let formData = new FormData(form);
+  xhr.send(formData);
 }
