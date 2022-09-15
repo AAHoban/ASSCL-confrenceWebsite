@@ -16,7 +16,7 @@
   ================================================== -->
   <!-- Themefisher Icon font -->
   <link rel="stylesheet" href="plugins/themefisher-font/style.css">
-  <!-- bootstrap.min css -->
+  <!-- bootstrap css -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <!-- Lightbox.min css -->
   <link rel="stylesheet" href="plugins/lightbox2/css/lightbox.min.css">
@@ -55,7 +55,7 @@ Fixed Navigation
 <header class="navigation fixed-top">
 	<div class="container">
 	  <!-- main nav -->
-	  <nav class="navbar navbar-expand-lg navbar-light px-0">
+	  <nav class="navbar navbar-expand-xl navbar-light px-0">
 		<!-- logo -->
 		<a class="navbar-brand logo" href="index.html">
 		  <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
@@ -66,39 +66,39 @@ Fixed Navigation
 	  <button class="navbar-toggler third-button" data-toggle="collapse" data-target="#navigation"
 	  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
 		  <div class="animated-icon3"><span></span><span></span><span></span></div>
-		</button>
+	  </button>
 	  <!-- /MenuBars -->
   
 		<div class="collapse navbar-collapse" id="navigation">
 		  <ul class="navbar-nav ml-auto text-center">
 			<li class="nav-item ">
-			  <a class="nav-link" href="index.html#about">About</a>
+			  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#about">About</a>
 			</li>
 			<li class="nav-item ">
 				<a class="nav-link" href="team.html">Committee</a>
 			</li>
 			<li class="nav-item ">
-			  <a class="nav-link" href="service.html">Submissions</a>
+			  <a class="nav-link" href="submission.html">Submissions</a>
 			</li>
 			<li class="nav-item ">
-				<a class="nav-link" href="index.html#tracks">Tracks</a>
+				<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#tracks">Tracks</a>
 			  </li>
 			<li class="nav-item ">
-			  <a class="nav-link" href="portfolio.html">Schedule</a>
+			  <a class="nav-link" href="schedule.html">Schedule</a>
 			</li>
 			<li class="nav-item ">
-				<a class="nav-link" href="index.html#speakers">Speakers</a>
-			  </li>
-			  <li class="nav-item dropdown">
+				<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#speakers">Speakers</a>
+			</li>
+			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
-				  aria-haspopup="true" aria-expanded="false">
-				  Sponsers <i class="tf-ion-chevron-down"></i>
+				aria-haspopup="true" aria-expanded="false">
+				Sponsers <i class="tf-ion-chevron-down"></i>
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
-				  <li><a class="dropdown-item" href="index.html#sponsers">Conference Sponsers</a></li>
-				  <li><a class="dropdown-item" href="sponser-form.html">Become A Sponser</a></li>
+					<li><a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#sponsers">Conference Sponsers</a></li>
+					<li><a class="dropdown-item" href="sponser-form.html">Become A Sponser</a></li>
 				</ul>
-			  </li>
+			</li>
 			<li class="nav-item ">
 			  <a class="nav-link" href="registration.html">Registration</a>
 			</li>
@@ -108,7 +108,7 @@ Fixed Navigation
 	  </nav>
 	  <!-- /main nav -->
 	</div>
-  </header>
+</header>
 <!--
 End Fixed Navigation
 ==================================== -->
@@ -287,7 +287,7 @@ End Fixed Navigation
 					</div>
 			</div>
 			<div class="col-md-12 text-center trackBtn">
-				<a href="service.html#conferenceTracks" class="btn btn-main">Conference Tracks <br> Topics</a>
+				<a href="submission.html#conferenceTracks" class="btn btn-main">Conference Tracks <br> Topics</a>
 			</div>
 		</div> <!-- End row -->
 	</div> <!-- End container -->
@@ -314,7 +314,7 @@ End Fixed Navigation
 				</p>
 			</div>
 			<div class="col-md-12 text-center trackBtn">
-				<a href="service.html#submissions" class="btn btn-main">All Guidelines</a>
+				<a href="submission.html#submissions" class="btn btn-main">All Guidelines</a>
 			</div>
 		</div>
 	</div> <!-- End container -->

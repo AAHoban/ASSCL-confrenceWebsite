@@ -59,7 +59,7 @@ Fixed Navigation
 <header class="navigation fixed-top">
 	<div class="container">
 	  <!-- main nav -->
-	  <nav class="navbar navbar-expand-lg navbar-light px-0">
+	  <nav class="navbar navbar-expand-xl navbar-light px-0">
 		<!-- logo -->
 		<a class="navbar-brand logo" href="index.html">
 		  <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
@@ -70,31 +70,38 @@ Fixed Navigation
 	  <button class="navbar-toggler third-button" data-toggle="collapse" data-target="#navigation"
 	  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
 		  <div class="animated-icon3"><span></span><span></span><span></span></div>
-		</button>
+	  </button>
 	  <!-- /MenuBars -->
   
 		<div class="collapse navbar-collapse" id="navigation">
 		  <ul class="navbar-nav ml-auto text-center">
 			<li class="nav-item ">
-			  <a class="nav-link" href="index.html#about">About</a>
+			  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#about">About</a>
 			</li>
 			<li class="nav-item ">
 				<a class="nav-link" href="team.html">Committee</a>
 			</li>
-			<li class="nav-item active">
-			  <a class="nav-link" href="service.html">Submissions</a>
+			<li class="nav-item ">
+			  <a class="nav-link" href="submission.html">Submissions</a>
 			</li>
 			<li class="nav-item ">
-				<a class="nav-link" href="index.html#tracks">Tracks</a>
+				<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#tracks">Tracks</a>
 			  </li>
 			<li class="nav-item ">
-			  <a class="nav-link" href="portfolio.html">Schedule</a>
+			  <a class="nav-link" href="schedule.html">Schedule</a>
 			</li>
 			<li class="nav-item ">
-				<a class="nav-link" href="index.html#speakers">Speakers</a>
-			  </li>
-			<li class="nav-item ">
-			  <a class="nav-link" href="index.html#sponsers">Sponsers</a>
+				<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#speakers">Speakers</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+				Sponsers <i class="tf-ion-chevron-down"></i>
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+					<li><a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#sponsers">Conference Sponsers</a></li>
+					<li><a class="dropdown-item" href="sponser-form.html">Become A Sponser</a></li>
+				</ul>
 			</li>
 			<li class="nav-item ">
 			  <a class="nav-link" href="registration.html">Registration</a>
@@ -105,7 +112,7 @@ Fixed Navigation
 	  </nav>
 	  <!-- /main nav -->
 	</div>
-  </header>
+</header>
 <!--
 End Fixed Navigation
 ==================================== -->
@@ -356,9 +363,9 @@ End Fixed Navigation
 				<p>Papers should describe original and unpublished work about the above or related topics.
 				All manuscripts will be reviewed by three members of the program committee. 
 				Authors are invited to submit their papers in English of up to 6 double-column pages IEEE format, with up to 2 extra pages with additional fees. 
-				The format of the paper should follow IEEE guidelines for the two-column IEEE-sponsored conference proceedings. Templates for Microsoft Word and LaTeX are available <span><a href="https://www.ieee.org/conferences/publishing/templates.html">here.</a></span>
+				The format of the paper should follow IEEE guidelines for the two-column IEEE-sponsored conference proceedings. Templates for Microsoft Word and LaTeX are available <span><a target="_blank" href="https://www.ieee.org/conferences/publishing/templates.html">here.</a></span>
 				Authors may use the online submission system hosted by EasyChair Conference System to submit their papers. 
-				The submission Web page for AISC-2024 can be found <span><a href="https://easychair.org/account/signin?l=8KDaFFRmQa5FoUd6heZlQT">here (EasyChair Conference System).</a></span> 
+				The submission Web page for AISC-2024 can be found <span><a target="_blank" href="https://easychair.org/account/signin?l=8KDaFFRmQa5FoUd6heZlQT">here (EasyChair Conference System).</a></span> 
 				Only the papers that have not been published or presented in any way will be accepted for AISC-2024.<br><br>
 					<span style="font-weight: 800;">Note:</span> The conference submission system only accepts manuscripts in PDF A4 format (before the revision manuscripts do not have to be checked by IEEE PDFXpress).
 				</p>
@@ -367,22 +374,6 @@ End Fixed Navigation
 	</div> <!-- End container -->
 </section> <!-- End section -->
 
-<!-- Start ConferenceTracks Section
-==================================== -->
-
-<section class="services">
-	<div class="container">	
-		<div class="title text-center">
-			<h2>Guidelines for Camera-Ready Papers</h2>
-			<div class="border"></div>
-		</div>
-		<div class="row text-left reveal">
-			<div style="width: 85%; margin: auto;">
-				<h4>Camera-Ready</h4>
-			</div>
-		</div>
-	</div>
-</section>
 
 <footer id="footer" class="bg-one">
 	<div class="top-footer">

@@ -13,13 +13,16 @@
 
   // navbarDropdown
 	if ($(window).width() < 992) {
-		$('#navigation .dropdown-toggle').on('click', function () {
+		$('.navbar-toggler').on('click', function () {
       $('.animated-icon3').toggleClass('open');
-			$(this).siblings('.dropdown-menu').animate({
+			$(this).siblings('.navbar-nav').animate({
 				height: 'toggle'
 			}, 300);
 		});
   }
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.animated-icon3').toggleClass('open');
+});
   
   //Hero Slider
   $('.hero-slider').slick({
@@ -180,7 +183,6 @@
 
 // The End Of The Year Date To Countdown To
 let countDownDate = new Date("March 1, 2024 23:59:59").getTime();
-// console.log(countDownDate);
 
 let counter = setInterval(() => {
   // Get Date Now
@@ -206,7 +208,7 @@ let counter = setInterval(() => {
   }
 }, 1000);
 
-//Navbar animated icon
+//Arrow animated icon
 const buttons = document.querySelectorAll('.iconBtn');
 
 buttons.forEach( iconBtn =>{
@@ -219,7 +221,7 @@ buttons.forEach( iconBtn =>{
     })
 } )
 
-//Fade Animation
+//Fade Animation (Reveal)
 window.addEventListener('scroll', reveal);
 
 function reveal(){

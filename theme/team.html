@@ -60,7 +60,7 @@ Fixed Navigation
 <header class="navigation fixed-top">
 	<div class="container">
 	  <!-- main nav -->
-	  <nav class="navbar navbar-expand-lg navbar-light px-0">
+	  <nav class="navbar navbar-expand-xl navbar-light px-0">
 		<!-- logo -->
 		<a class="navbar-brand logo" href="index.html">
 		  <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
@@ -71,31 +71,38 @@ Fixed Navigation
 	  <button class="navbar-toggler third-button" data-toggle="collapse" data-target="#navigation"
 	  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
 		  <div class="animated-icon3"><span></span><span></span><span></span></div>
-		</button>
+	  </button>
 	  <!-- /MenuBars -->
   
 		<div class="collapse navbar-collapse" id="navigation">
 		  <ul class="navbar-nav ml-auto text-center">
 			<li class="nav-item ">
-			  <a class="nav-link" href="index.html#about">About</a>
+			  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#about">About</a>
 			</li>
-			<li class="nav-item active">
+			<li class="nav-item ">
 				<a class="nav-link" href="team.html">Committee</a>
 			</li>
 			<li class="nav-item ">
-			  <a class="nav-link" href="service.html">Submissions</a>
+			  <a class="nav-link" href="submission.html">Submissions</a>
 			</li>
 			<li class="nav-item ">
-				<a class="nav-link" href="index.html#tracks">Tracks</a>
+				<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#tracks">Tracks</a>
 			  </li>
 			<li class="nav-item ">
-			  <a class="nav-link" href="portfolio.html">Schedule</a>
+			  <a class="nav-link" href="schedule.html">Schedule</a>
 			</li>
 			<li class="nav-item ">
-				<a class="nav-link" href="index.html#speakers">Speakers</a>
-			  </li>
-			<li class="nav-item ">
-			  <a class="nav-link" href="index.html#sponsers">Sponsers</a>
+				<a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#speakers">Speakers</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+				Sponsers <i class="tf-ion-chevron-down"></i>
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+					<li><a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse" href="index.html#sponsers">Conference Sponsers</a></li>
+					<li><a class="dropdown-item" href="sponser-form.html">Become A Sponser</a></li>
+				</ul>
 			</li>
 			<li class="nav-item ">
 			  <a class="nav-link" href="registration.html">Registration</a>
@@ -106,7 +113,7 @@ Fixed Navigation
 	  </nav>
 	  <!-- /main nav -->
 	</div>
-  </header>
+</header>
   <!--
   End Fixed Navigation
   ==================================== -->
@@ -141,12 +148,12 @@ Fixed Navigation
 				<div class="team-member text-center">
 					<div class="member-photo">
 						<div class="member-content">
-							<h3>Dr. Ahmed Alyamani</h3>
+							<h3>Dr. Ahmed AlYamani</h3>
 							<span>President of Prince Sultan University, <br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -160,12 +167,12 @@ Fixed Navigation
 				<div class="team-member text-center">
 					<div class="member-photo">
 						<div class="member-content">
-							<h3>Dr. Mohamed Alkanhal</h3>
+							<h3>Dr. Abdulaziz AlSehibani</h3>
 							<span>Dean, College of Computer and Information Sciences, <br>Prince Sultan University, Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -183,8 +190,8 @@ Fixed Navigation
 							<span>Research Professor, Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -202,8 +209,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -216,8 +223,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -235,8 +242,8 @@ Fixed Navigation
 							<span>Chair of CS Department, Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -254,8 +261,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -268,8 +275,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -287,8 +294,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -301,8 +308,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -320,8 +327,8 @@ Fixed Navigation
 							<span>King Fahd University of Petroleum & Minerals,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -339,8 +346,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -353,8 +360,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -372,8 +379,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -386,8 +393,8 @@ Fixed Navigation
 							<span>Prince Sultan University,<br>Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -405,8 +412,8 @@ Fixed Navigation
 							<span>Dean, College of Computer and Information Sciences, <br>Prince Sultan University, Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -424,8 +431,8 @@ Fixed Navigation
 							<span>Prince Sultan University, <br> Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -438,8 +445,8 @@ Fixed Navigation
 							<span>Prince Sultan University, <br> Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -457,8 +464,8 @@ Fixed Navigation
 							<span>Prince Sultan University, <br> Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -471,8 +478,8 @@ Fixed Navigation
 							<span>Prince Sultan University, <br> Saudi Arabia</span>
 							<div class="mask">
 								<ul class="clearfix">
-									<li><a href=""><i class="tf-ion-social-google-outline"></i></a></li>									
-									<li><a href=""><i class="tf-ion-social-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-google"></i></a></li>									
+									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
