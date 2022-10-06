@@ -1438,6 +1438,12 @@ span.text{
   width: 55px;
   transition: all 0.3s ease 0s;
 }
+.service-2 .service-item h4 {
+  cursor: default;
+}
+.service-2 .service-item p {
+  cursor: default;
+}
 .reveal {
   position: relative;
   transform: translateY(100px);
